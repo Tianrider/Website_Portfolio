@@ -58,6 +58,10 @@ html {
 */
 
 body {
+  background-image: url("../static/assets/background.png");
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
   margin: 0;
   /* 1 */
   line-height: inherit;
@@ -719,7 +723,6 @@ video {
   color: var(--color);
 }
 
-
 .scroll_button:before {
   content: "";
   position: absolute;
@@ -756,3 +759,4 @@ video {
   align-items: center;
   justify-content: center;
  }
+
