@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian Hadiwijaya</title>
+
+    <link href="/src/input.css" rel="stylesheet">
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body>
+    <div class="flex flex-row items-center justify-evenly">
+        <div class="profile_picture">
+            <img class="object-cover mt-[50px] align-middle rounded-[50px] w-[300px] h-[300px] shadow-xl" src="static/assets/Profile Picture.jpg" alt="profile picture">
+        </div>
+        <div class="title text-3xl">
+            <h1>Christian Hadiwijaya</h1>
+            <hr>
+            <h3 class="text-amber-900">Undergraduate Computer Engineering Student</h3>
+        </div>
+    </div>
+
+    <div class="containers">
+        <h1 style="color: rgb(150, 83, 0);">About Me</h1>
+        <p><center>
+            <span id="aboutmetext" class="font-medium">
+            Enthusiastic and aspiring first year Computer Engineering student at the University of Indonesia. Passionate about exploring the intersection of hardware and software. 
+            Currently honing my skills in areas of software development. 
+            I thrive on challenges that allow me to push the boundaries of what's possible.
+            Eager to connect with like-minded professionals, industry experts, and companies 
+            to collaborate on exciting projects and contribute to the ever-evolving world of technology.
+            </span>
+        </center></p>
+    </div>
+
+    <br>
+
+    <div class="containers" id="education">
+        <h1 style="color: rgb(150, 83, 0);">Education</h1>
+        <div class="educations">
+            <h3>University of Indonesia</h3>
+            <p>Computer Engineering</p>
+            <p>2023 - Present</p>
+        </div>
+        <div class="educations">
+            <h3>SMAN 55 Jakarta</h3>
+            <p>Science</p>
+            <p>2019 - 2022</p>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="flex flex-col justify-center items-center text-center">
+        <h1 style="color: rgb(150, 83, 0);">Social Media</h1>
+        <div class="flex p-[20px] pb-10 gap-5">
+            <a href="https://www.instagram.com/tianhd_/" target="_blank"><img class="w-[90px] h-[90px]  hover:w-[100px] hover:h-[100px] " src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-instagram-icon-png-image_6315974.png" alt="instagram"></a>
+            <a href="https://linkedin.com/christianhadiwijaya" target="_blank"><img class="w-[90px] h-[90px]  hover:w-[100px] hover:h-[100px]" src="static/assets/linkedin.png"></a>
+            <a href="https://github.com/tianrider" target="_blank"><img class="w-[90px] h-[90px]  hover:w-[100px] hover:h-[100px]" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github"></a>
+        </div>
+    </div>
+
+    <div class="quotes flex flex-col items-center mt-2">
+        <h1>
+            Quotes
+        </h1>
+        <div>
+            <p id="random_quotes">
+                "The only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle."
+            </p>
+        </div>
+    </div>
+
+    <div class="button_container">
+        <button onclick="scroll_to_top()" class="scroll_button" >Top</button>
+    </div>
+
+    <script src="static/script.js"></script>
+</body>
+</html>
