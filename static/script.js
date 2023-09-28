@@ -10,4 +10,4 @@ function scroll_to_top() {
         }
     };
     smoothscroll();  
-}
+} 

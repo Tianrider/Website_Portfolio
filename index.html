@@ -9,31 +9,43 @@
     <link href="dist/output.css" rel="stylesheet">
 </head>
 <body>
-    <div class="flex flex-row items-center justify-evenly">
-        <div class="profile_picture">
-            <img class="object-cover mt-[50px] align-middle rounded-[50px] w-[300px] h-[300px] shadow-xl" src="static/assets/Profile Picture.jpg" alt="profile picture">
-        </div>
+    <nav>
+        <img src="static/assets/ch.png" alt="logo" class="logo">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="#aboutmelink">About Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#socialmedialink">Social Media</a></li>
+            <li><a href="#quotes">Quotes</a></li>
+        </ul>
+    </nav>
+    <div class="flex flex-row items-center justify-evenly" id="header">
         <div class="title text-3xl">
+            <h2 style="font-family: 'Inter Tight', sans-serif;">HI, I'm</h2>
             <h1>Christian Hadiwijaya</h1>
-            <hr>
-            <h3 class="text-amber-900">Undergraduate Computer Engineering Student</h3>
+            <h3 class="text-amber-900 italic"><i>Undergraduate Computer Engineering Student</i></h3>
+        </div>
+        <div class="profile_picture">
+            <img class="object-cover mt-[50px] align-middle" src="static/assets/Profile_Picture-removebg-preview.png" alt="profile picture">
         </div>
     </div>
 
-    <div class="containers">
+    <br>
+
+    <div class="containers" id="aboutmelink">
         <h1 style="color: rgb(150, 83, 0);">About Me</h1>
         <p><center>
-            <span id="aboutmetext" class="font-medium">
-            Enthusiastic and aspiring first year Computer Engineering student at the University of Indonesia. Passionate about exploring the intersection of hardware and software. 
+            <span id="aboutmetext">Enthusiastic and aspiring first year Computer Engineering student at the University of Indonesia. Passionate about exploring the intersection of hardware and software. 
             Currently honing my skills in areas of software development. 
             I thrive on challenges that allow me to push the boundaries of what's possible.
             Eager to connect with like-minded professionals, industry experts, and companies 
             to collaborate on exciting projects and contribute to the ever-evolving world of technology.
             </span>
-        </center></p>
+            </center>
+       </p>
     </div>
-
-    <br>
+    
+    <hr>
 
     <div class="containers" id="education">
         <h1 style="color: rgb(150, 83, 0);">Education</h1>
@@ -49,9 +61,9 @@
         </div>
     </div>
 
-    <br>
+    <hr>
 
-    <div class="flex flex-col justify-center items-center text-center">
+    <div class="containers flex flex-col justify-center items-center text-center" id="socialmedialink">
         <h1 style="color: rgb(150, 83, 0);">Social Media</h1>
         <div class="flex p-[20px] pb-10 gap-5">
             <a href="https://www.instagram.com/tianhd_/" target="_blank"><img class="w-[90px] h-[90px]  hover:w-[100px] hover:h-[100px] " src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-instagram-icon-png-image_6315974.png" alt="instagram"></a>
@@ -60,9 +72,13 @@
         </div>
     </div>
 
-    <div class="quotes flex flex-col items-center mt-2">
+    <hr>
+
+    <div class="containers flex flex-col items-center mt-2">
         <h1>
+            <span style="color: rgb(150, 83, 0);">
             Quotes
+            </span>
         </h1>
         <div>
             <p id="random_quotes">
@@ -71,7 +87,7 @@
         </div>
     </div>
 
-    <div class="button_container">
+    <div class="containers button_container" id="quotes">
         <button onclick="scroll_to_top()" class="scroll_button" >Top</button>
     </div>
 

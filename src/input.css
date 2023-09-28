@@ -11,10 +11,6 @@
 
 body{
     margin-bottom: 100px;
-    background-image: url("/static/assets/background.png");
-    background-attachment: scroll;
-    background-position: center;
-    background-size: cover;
 }
 
 p {
@@ -29,21 +25,9 @@ p {
     justify-content: space-evenly;
 }
 
-.profile_picture img {
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-
 .title h1{
     --tw-text-opacity: 1;
     color: rgb(120 53 15 / var(--tw-text-opacity));
-}
-
-.containers {
-    margin-left: 100px;
-    margin-right: 100px;
-    display : flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 #aboutmetext {
