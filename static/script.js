@@ -6,8 +6,8 @@ function scroll_to_top() {
 
         if (currentScroll > 0) {
             window.requestAnimationFrame(smoothscroll);
-            window.scrollTo(0, currentScroll - (currentScroll / 8));
+            window.scrollTo(0, currentScroll - (currentScroll));
         }
     };
     smoothscroll();  
-} 
+}

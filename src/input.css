@@ -35,12 +35,6 @@ p {
     font-weight: 500;
 }
 
-.containers div {
-    padding: 10px;
-    display: flex;
-    align-items: center;
-}
-
 .educations h3{
     font-size: 100px;
 }

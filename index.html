@@ -16,7 +16,7 @@
             <li><a href="#aboutmelink">About Me</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#socialmedialink">Social Media</a></li>
-            <li><a href="#quotes">Quotes</a></li>
+            <li><a href="#contact">Contact Me</a></li>
         </ul>
     </nav>
     <div class="flex flex-row items-center justify-evenly" id="header">
@@ -66,7 +66,7 @@
     <div class="containers flex flex-col justify-center items-center text-center" id="socialmedialink">
         <h1 style="color: rgb(150, 83, 0);">Social Media</h1>
         <div class="flex p-[20px] pb-10 gap-5">
-            <a href="https://www.instagram.com/tianhd_/" target="_blank"><img class="w-[90px] h-[90px]  hover:w-[100px] hover:h-[100px] " src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-instagram-icon-png-image_6315974.png" alt="instagram"></a>
+            <a href="https://www.instagram.com/tianhd_/" target="_blank"><img class="w-[90px] h-[90px]  hover:w-[100px] hover:h-[100px] slide-fwd-center" src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-instagram-icon-png-image_6315974.png" alt="instagram"></a>
             <a href="https://linkedin.com/in/christianhadiwijaya" target="_blank"><img class="w-[90px] h-[90px]  hover:w-[100px] hover:h-[100px]" src="static/assets/linkedin.png"></a>
             <a href="https://github.com/tianrider" target="_blank"><img class="w-[90px] h-[90px]  hover:w-[100px] hover:h-[100px]" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github"></a>
         </div>
@@ -74,16 +74,37 @@
 
     <hr>
 
-    <div class="containers flex flex-col items-center mt-2">
-        <h1>
+    <div class="flex flex-col form_container">
+        <h1 class="flex items-center justify-center">
             <span style="color: rgb(150, 83, 0);">
-            Quotes
+            Contact Me
             </span>
         </h1>
-        <div>
-            <p id="random_quotes">
-                "The only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle."
-            </p>
+        <div class="contact_form">
+            <form class="message-form" name="message-form" onsubmit="return validateform()" id="contact">
+                <div id="yourname">
+                    <label for="inputname" style="color: rgb(150, 83, 0);">Subject</label>
+                    <input autofocus placeholder="Enter Subject"
+                        id="inputname"
+                        type="text"
+                        name="valid-name"
+                    >
+                </div>
+
+                <div id="youremail">
+                    <label for="inputemail" style="color: rgb(150, 83, 0);"> Your Email</label>
+                        <input 
+                        type="text"
+                        id="email"
+                        name="valid-email"
+                        >        
+                </div>
+
+                <div>
+                    <button id="Send">Send</button>
+                </div>
+                    
+            </form>
         </div>
     </div>
 

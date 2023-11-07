@@ -7,6 +7,28 @@
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
 
+@-webkit-keyframes slide-fwd-center {
+  0% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+  }
+  100% {
+    -webkit-transform: translateZ(160px);
+            transform: translateZ(160px);
+  }
+}
+@keyframes slide-fwd-center {
+  0% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+  }
+  100% {
+    -webkit-transform: translateZ(160px);
+            transform: translateZ(160px);
+  }
+}
+
+
 *,
 ::before,
 ::after {
@@ -809,3 +831,55 @@ nav ul li a:hover::after{
   justify-content: center;
  }
 
+ form label{
+  font-size: 1.3rem;
+  color: aliceblue;
+  display: flex;
+  padding: 10px;
+}
+
+form input {
+  position: relative;
+  height: 150px;
+  width: 100%;
+  font-size: 1rem;
+  outline: none;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 10px;
+}
+
+form button {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 40px;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 50px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(202, 165, 110);
+  transition: all 0.2s ease ;
+}
+
+form button:hover {
+  background-color: rgba(104, 109, 82, 0.664);
+  cursor: pointer;
+}
+
+.form_container {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.form_container form {
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.slide-fwd-center:hover {
+	-webkit-animation: slide-fwd-center 0.45s cubic-bezier(0.445, 0.050, 0.550, 0.950) both;
+	        animation: slide-fwd-center 0.45s cubic-bezier(0.445, 0.050, 0.550, 0.950) both;
+}
