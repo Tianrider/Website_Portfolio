@@ -662,6 +662,11 @@ nav {
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 10px;
+  position: sticky;
+}
+
+.navbar {
+  position: sticky;
 }
 
 nav ul li {
@@ -732,6 +737,14 @@ nav ul li a:hover::after{
   flex-direction: column;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+.containers h1 {
+  color: rgb(150, 83, 0);
+}
+
+#ContactMeh1 {
+  color: rgb(150, 83, 0);
 }
 
 #aboutmetext {
@@ -838,7 +851,7 @@ nav ul li a:hover::after{
   padding: 10px;
 }
 
-form input {
+form input{
   position: relative;
   height: 150px;
   width: 100%;
@@ -847,6 +860,17 @@ form input {
   border: 1px solid #ddd;
   border-radius: 6px;
   padding: 0 10px;
+}
+
+form textarea{
+  position: relative;
+  height: 150px;
+  width: 100%;
+  font-size: 1rem;
+  outline: none;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px;
 }
 
 form button {
@@ -872,6 +896,7 @@ form button:hover {
 
 .form_container {
   background-color: rgba(255, 255, 255, 0.5);
+  padding-bottom: 50px;
 }
 
 .form_container form {
@@ -882,4 +907,133 @@ form button:hover {
 .slide-fwd-center:hover {
 	-webkit-animation: slide-fwd-center 0.45s cubic-bezier(0.445, 0.050, 0.550, 0.950) both;
 	        animation: slide-fwd-center 0.45s cubic-bezier(0.445, 0.050, 0.550, 0.950) both;
+}
+
+#inputsubject {
+  width: 100%;
+  height: 4rem;
+  padding: 0 1rem;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #40474e;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #4d565e;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.dark-mode ul li a {
+  color: rgb(255, 255, 255);
+}
+
+.dark-mode ul li a::after{
+  background: rgb(0, 0, 0);
+}
+
+.dark-mode .logo {
+  background-color: rgb(255, 255, 255);
+  border: 0px;
+  border-radius: 30%;
+  width: 60px;
+  height: 50px;
+}
+
+.dark-mode h1 {
+  color: rgb(255, 255, 255);
+}
+
+.dark-mode .title h2 {
+  color: #9ca3af;
+}
+
+.dark-mode .title h3 {
+  color: #9ca3af;
+}
+
+.dark-mode .containers h1 {
+  color: #eceef1;
+}
+
+.dark-mode .form_containers h1 {
+  color: #eceef1;
+}
+
+.dark-mode #ContactMeh1 {
+  color: #eceef1;
+}
+
+.formLabel {
+  color: rgb(121, 69, 0);
+}
+
+.dark-mode .formLabel {
+  color: #eceef1;
+}
+
+.dark-mode .button button {
+  background-color: rgb(191, 191, 191)
+}
+
+.dark-mode .button button:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+.button{
+  padding-right: 500px;
+  padding-left: 500px;
 }

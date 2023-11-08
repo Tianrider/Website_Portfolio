@@ -9,9 +9,15 @@
     <link href="dist/output.css" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <img src="static/assets/ch.png" alt="logo" class="logo">
+    <nav class="navbar">
+        <img src="../static/assets/ch.png" alt="logo" class="logo">
         <ul>
+            <li>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round" id="darkModeToggle"></span>
+                </label>
+            </li>
             <li><a href="">Home</a></li>
             <li><a href="#aboutmelink">About Me</a></li>
             <li><a href="#education">Education</a></li>
@@ -33,8 +39,8 @@
     <br>
 
     <div class="containers" id="aboutmelink">
-        <h1 style="color: rgb(150, 83, 0);">About Me</h1>
-        <p><center>
+        <h1>About Me</h1>
+        <p><center> 
             <span id="aboutmetext">Enthusiastic and aspiring first year Computer Engineering student at the University of Indonesia. Passionate about exploring the intersection of hardware and software. 
             Currently honing my skills in areas of software development. 
             I thrive on challenges that allow me to push the boundaries of what's possible.
@@ -48,7 +54,7 @@
     <hr>
 
     <div class="containers" id="education">
-        <h1 style="color: rgb(150, 83, 0);">Education</h1>
+        <h1>Education</h1>
         <div class="educations">
             <h3>University of Indonesia</h3>
             <p>Computer Engineering</p>
@@ -64,7 +70,7 @@
     <hr>
 
     <div class="containers flex flex-col justify-center items-center text-center" id="socialmedialink">
-        <h1 style="color: rgb(150, 83, 0);">Social Media</h1>
+        <h1>Social Media</h1>
         <div class="flex p-[20px] pb-10 gap-5">
             <a href="https://www.instagram.com/tianhd_/" target="_blank"><img class="w-[90px] h-[90px]  hover:w-[100px] hover:h-[100px] slide-fwd-center" src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-instagram-icon-png-image_6315974.png" alt="instagram"></a>
             <a href="https://linkedin.com/in/christianhadiwijaya" target="_blank"><img class="w-[90px] h-[90px]  hover:w-[100px] hover:h-[100px]" src="static/assets/linkedin.png"></a>
@@ -75,41 +81,37 @@
     <hr>
 
     <div class="flex flex-col form_container">
-        <h1 class="flex items-center justify-center">
-            <span style="color: rgb(150, 83, 0);">
-            Contact Me
-            </span>
-        </h1>
+        <h1 class="flex items-center justify-center" id="ContactMeh1">Contact Me</h1>
         <div class="contact_form">
             <form class="message-form" name="message-form" onsubmit="return validateform()" id="contact">
                 <div id="yourname">
-                    <label for="inputname" style="color: rgb(150, 83, 0);">Subject</label>
-                    <input autofocus placeholder="Enter Subject"
-                        id="inputname"
+                    <label for="inputsubject" class="formLabel">Subject</label>
+                    <input placeholder="Enter Subject..."
+                        id="inputsubject"
                         type="text"
-                        name="valid-name"
+                        name="valid-subject"
+                        maxlength="24"
+                        min="5"
                     >
                 </div>
 
-                <div id="youremail">
-                    <label for="inputemail" style="color: rgb(150, 83, 0);"> Your Email</label>
-                        <input 
+                <div id="message">
+                    <label for="inputmsg" class="formLabel">Message</label>
+                        <textarea placeholder="Enter Your Message..." 
                         type="text"
-                        id="email"
-                        name="valid-email"
-                        >        
+                        id="inputmsg"
+                        name="valid-msg"
+                        maxlength="560"
+                        min="10"
+                        ></textarea> 
                 </div>
 
-                <div>
-                    <button id="Send">Send</button>
+                <div class="button w-5">
+                    <button id="Send" class="w-32">Send</button>
                 </div>
                     
             </form>
         </div>
-    </div>
-
-    <div class="containers button_container" id="quotes">
-        <button onclick="scroll_to_top()" class="scroll_button" >Top</button>
     </div>
 
     <script src="static/script.js"></script>
